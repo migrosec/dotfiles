@@ -44,8 +44,3 @@ keymap.set("n", "<leader>d", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- toggleterm
 keymap.set("n", "<leader>/", ":ToggleTerm<CR>", { desc = "ToggleTerm" }) -- opens parent dir over current active window
-
--- -- lazygit
--- keymap.set("n", "<leader>gg", function()
--- 	require("snacks").lazygit()
--- end, { desc = "Lazygit" })
