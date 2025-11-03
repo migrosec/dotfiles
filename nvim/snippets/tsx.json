@@ -1,0 +1,7 @@
+{
+  "xx": {
+    "prefix": "xx",
+    "body": "print(\"${1:text}\")$0",
+    "description": "Prints a string."
+  }
+}

@@ -117,6 +117,7 @@ alias nv="nvim"
 alias v="nvim"
 alias g="lazygit"
 alias c="clear"
+alias doom="~/.config/emacs/bin/doom"
 
 export PATH=$PATH:/Users/michaelgrossmann/go/bin
 # start starhsip

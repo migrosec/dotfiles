@@ -16,13 +16,14 @@ keymap.set("n", "<leader>qq", ":q!<CR>", { desc = "Quit neovim" }) -- split wind
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- window management
-keymap.set("n", "<leader>wi", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
-keymap.set("n", "<leader>wu", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
+keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
+keymap.set("n", "<leader>ws", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>wc", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- tmux navigation
 keymap.set("n", "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>", { desc = "Move left window" }) -- close current split window
 keymap.set("n", "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>", { desc = "Move down window" }) -- close current split window
 keymap.set("n", "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>", { desc = "Move up window" }) -- close current split window
@@ -43,4 +44,6 @@ keymap.set("n", "<leader>fS", ":wa<CR>", { noremap = true, silent = true, desc =
 keymap.set("n", "<leader>d", "<CMD>Oil<CR>", { desc = "Open parent directory" }) -- opens parent dir over current active window
 
 -- toggleterm
-keymap.set("n", "<leader>/", ":ToggleTerm<CR>", { desc = "ToggleTerm" }) -- opens parent dir over current active window
+keymap.set("n", "<C-o>", ":ToggleTerm<CR>", { desc = "ToggleTerm" }) -- open terminal
+keymap.set("i", "<C-o>", ":ToggleTerm<CR>", { desc = "ToggleTerm" }) -- open terminal
+keymap.set("t", "<C-o>", ":ToggleTerm<CR>", { desc = "ToggleTerm" }) -- open terminal
